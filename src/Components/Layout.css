@@ -1,0 +1,8 @@
+.LayoutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 800px;
+  justify-content: space-between;
+}
