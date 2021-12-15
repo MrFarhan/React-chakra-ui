@@ -4,7 +4,6 @@ import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
-import { extendTheme } from "@chakra-ui/react";
 import App from "./App";
 import theme from "./Theme";
 

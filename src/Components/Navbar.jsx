@@ -1,8 +1,8 @@
-import { Avatar, Button,  useColorMode } from "@chakra-ui/react";
+import { Avatar, Button, useColorMode } from "@chakra-ui/react";
 import React from "react";
 import "./Navbar.css"
 // import { Link as ReachLink } from "@reach/router"
-import { Link } from "react-router-dom";
+import TempComponent from "./TempComponent";
 
 
 
@@ -18,9 +18,7 @@ const Navbar = () => {
       <div className="profilePic"><Avatar size='xl' name='Dan Abrahmov' src='https://bit.ly/dan-abramov' /></div>
       <div className="NavLinks">
         {navLinks?.map((item, index) => {
-          return <Button colorScheme='teal' variant='solid' background="white" color={"black"}>
-            <Link to={item.route}>{item.text}</Link>
-          </Button>
+          return <TempComponent item={item}  index={index} />
         })}
       </div>
       <Button onClick={toggleColorMode}>
